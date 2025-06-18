@@ -18,6 +18,7 @@ import Sixthscreen from './screens/SixthScreen';
 function App() {
   
   return <>
+  <div style={{overflowX:"hidden"}}>
   <FirstScreen/>
   <SecondScreen/>
  <AboutIdit/>
@@ -26,6 +27,7 @@ function App() {
 <FifthScreen/>
 <Sixthscreen/>
   <ByMe/>
+  </div>
   </>
 }
 
