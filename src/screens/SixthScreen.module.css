@@ -1,0 +1,160 @@
+.title {
+    font-family: "OpenSans", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem auto 0rem;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #333333, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.4;
+    max-width: 92%;
+    direction: rtl;
+    position: relative;
+    letter-spacing: -1.5px;
+    padding: 0 1rem;
+    z-index: 1;
+    transition: all 0.5s ease;
+    word-wrap: break-word;
+}
+
+.subtitle {
+    font-family: "HeeboR", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 2.5rem auto 1rem;
+    background: linear-gradient(to right, #333333, #666666, #333333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.4;
+    max-width: 92%;
+    direction: rtl;
+    letter-spacing: -0.8px;
+    padding: 0 1rem;
+    z-index: 1;
+    transition: all 0.5s ease;
+    word-wrap: break-word;
+}
+
+.description {
+    font-family: "HeeboR", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem auto 1rem;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #333333, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.4;
+    max-width: 92%;
+    direction: rtl;
+    position: relative;
+    letter-spacing: -0.5px;
+    padding: 0 1rem;
+    z-index: 1;
+    transition: all 0.5s ease;
+    word-wrap: break-word;
+}
+
+/* Layout Containers */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    direction: rtl;
+    margin: 2% auto;
+}
+
+.achievementsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    margin: 2rem auto;
+    direction: rtl;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #4A4A4A;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.achievementText {
+    font-family: "HeeboR", sans-serif;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #565656, #7b7777, #565656);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        max-width: 95%;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        max-width: 95%;
+    }
+
+    .row {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievementsContainer {
+        width: 95%;
+    }
+
+    .achievementText {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+        letter-spacing: -1px;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .achievementText {
+        font-size: 1rem;
+    }
+
+    .icon {
+        font-size: 1.6rem;
+        margin-left: 0.8rem;
+    }
+}

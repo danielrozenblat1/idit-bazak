@@ -1,0 +1,125 @@
+
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 200px;
+  height: 350px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+    0 2px 16px rgba(255, 255, 255, 0.1) inset;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.videoWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset,
+    0 4px 24px rgba(255, 255, 255, 0.15) inset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.videoWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.4) 50%, 
+    transparent 100%);
+  z-index: 1;
+}
+
+.videoWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.03) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.03) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+  filter: brightness(1.05) contrast(1.1) saturate(1.1);
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+  .videoContainer {
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+  
+  .videoWrapper {
+    width: 45%;
+    max-width: 160px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .videoContainer {
+    gap: 0.8rem;
+    padding: 0.5rem;
+  }
+  
+  .videoWrapper {
+    width: 47%;
+    max-width: 140px;
+    height: 240px;
+    border-radius: 15px;
+  }
+  
+  .video {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .videoWrapper {
+    width: 48%;
+    max-width: 120px;
+    height: 200px;
+    border-radius: 12px;
+  }
+  
+  .video {
+    border-radius: 12px;
+  }
+}

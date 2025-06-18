@@ -1,0 +1,94 @@
+/* SmallBox.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 12px auto;
+  padding: 1rem;
+  direction: rtl;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+  
+  /* עיצוב על פי infoCard */
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.container:before {
+  display: none;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15), 0 0 20px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.text {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1rem;
+  direction: rtl;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.icon {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  color: #000000;
+}
+
+.container:hover .icon {
+  opacity: 1;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 130px;
+    height: 130px;
+    padding: 0.75rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+  }
+
+  .icon {
+    width: 35%;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 450px) {
+  .container {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+@media (min-width: 1051px) {
+  .container {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .text {
+    font-size: 1.1rem;
+  }
+}

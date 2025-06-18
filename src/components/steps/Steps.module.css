@@ -1,0 +1,112 @@
+/* Steps.module.css */
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  direction: rtl;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.stepItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  padding: 1.5rem;
+}
+
+.iconContainer {
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepTitle {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #D3D3D3;
+}
+
+.stepDescription {
+  font-family: 'HeeboR', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  color: #B8B8B8;
+}
+
+.connector {
+  width: 2px;
+  height: 3rem;
+  background: linear-gradient(to bottom, #A9A9A9, #F5F5F5, #A9A9A9);
+  margin: 1rem 0;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stepsContainer {
+    padding: 1rem 0.5rem;
+  }
+  
+  .stepItem {
+    max-width: 250px;
+    padding: 1rem;
+  }
+  
+  .iconContainer {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .stepTitle {
+    font-size: 0.9rem;
+  }
+  
+  .stepDescription {
+    font-size: 0.8rem;
+  }
+  
+  .connector {
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stepItem {
+    max-width: 200px;
+    padding: 0.75rem;
+  }
+  
+  .iconContainer {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .stepTitle {
+    font-size: 0.85rem;
+  }
+  
+  .stepDescription {
+    font-size: 0.75rem;
+  }
+  
+  .connector {
+    height: 2rem;
+  }
+}

@@ -1,0 +1,21 @@
+.a{
+  text-decoration: none;
+  color: transparent;
+  font-size: 1.3rem;
+  margin: 1%;
+  background: linear-gradient(to right, #A9A9A9, #F5F5F5, #A9A9A9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.byMe{
+  text-align: center;
+  margin: 1% auto;
+  width:100%;
+  color: transparent;
+  font-size: 1rem;
+  font-family: "AssistantR";
+  background: linear-gradient(to right, #A9A9A9, #F5F5F5, #A9A9A9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
