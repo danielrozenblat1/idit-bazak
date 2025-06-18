@@ -1,3 +1,5 @@
+/* Treatments.module.css */
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -211,29 +213,15 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.detailIcon {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  filter: brightness(0) saturate(100%) invert(82%) sepia(0%) saturate(0%) hue-rotate(218deg) brightness(95%) contrast(87%);
-  margin-top: 2px;
-}
-
-.detailContent {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  flex: 1;
-}
-
-.detailItem strong {
+.detailItem strong,
+.galleryContainer h4 {
   font-family: 'AssistantR', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
   background: linear-gradient(45deg, #A2A2A2, #E8E8E8, #C0C0C0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 700;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -244,13 +232,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.5;
   font-weight: 500;
-}
-
-.duration {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
 }
 
 .detailList {
@@ -269,24 +251,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.5;
   font-weight: 500;
   position: relative;
   padding-right: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.checkIcon {
-  width: 16px;
-  height: 16px;
-  color: #4CAF50;
-  flex-shrink: 0;
-}
-
-.detailList li::before {
-  display: none;
 }
 
 .galleryContainer {
@@ -295,18 +262,6 @@
   background: rgba(26, 26, 26, 0.4);
   border-radius: 12px;
   border: 1px solid rgba(192, 192, 192, 0.2);
-}
-
-.galleryContainer h4 {
-  font-family: 'AssistantR', sans-serif;
-  font-size: 1.2rem;
-  background: linear-gradient(45deg, #A2A2A2, #E8E8E8, #C0C0C0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin: 0 0 1rem 0;
-  font-weight: 700;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .imageGallery {
@@ -336,6 +291,36 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.ctaButton {
+  font-family: 'AssistantR', sans-serif;
+  background: rgba(192, 192, 192, 0.15);
+  color: rgba(255, 255, 255, 0.95);
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(135deg, rgba(200,200,200,0.1), rgba(255,255,255,0.05));
+}
+
+.ctaButton:hover {
+  background: rgba(192, 192, 192, 0.25);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
+.duration {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 /* Responsive Design */
