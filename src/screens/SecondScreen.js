@@ -12,7 +12,7 @@ const SecondScreen = () => {
                     <br/> 
                     <span className={styles.underlineText}>ורשמית את נחשבת ל״קוסמטיקאית״</span>
                 </div>
-     <div className={styles.title}>אבל התחלת להבין שזה לא רק לקבל תעודה.. זה:</div>
+     <div className={styles.title}> אבל התחלת להבין שתעודת המקצוע לבד לא מספיקה בשביל להיות עסק מצליח.. זה:</div>
 {/* <div className={styles.row}>
 <LittleBox text="להתחיל לשווק את עצמך כדי להביא לקוחות" icon={learn}/>
 <LittleBox text="לדעת לטפל במקרים יותר מסובכים שקיימים" icon={learn}/>

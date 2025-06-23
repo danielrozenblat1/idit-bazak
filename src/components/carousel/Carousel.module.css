@@ -1,14 +1,12 @@
-/* TestimonialsCarousel.module.css */
+/* TestimonialsCarousel.module.css - תיקון */
 
 .title {
   font-family: "OpenSans", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  margin: 0;
-  background: linear-gradient(to right, #A9A9A9, #F5F5F5, #A9A9A9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 4px rgba(162, 162, 162, 0.2);
+  margin: 2rem 0 1rem 0;
+  color: #ffffff; /* הוספת צבע לבן מפורש */
+  text-shadow: 0 2px 4px rgba(162, 162, 162, 0.5);
   line-height: 1.4;
   max-width: 92%;
   direction: rtl;
@@ -24,11 +22,9 @@
   font-family: "HeeboR", sans-serif;
   font-size: 1.4rem;
   text-align: center;
-  margin: 1rem auto 1rem;
-  background: linear-gradient(to right, #A9A9A9, #F5F5F5, #A9A9A9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 4px rgba(162, 162, 162, 0.2);
+  margin: 1rem auto 2rem;
+  color: rgba(255, 255, 255, 0.8); /* הוספת צבע לבן שקוף */
+  text-shadow: 0 2px 4px rgba(162, 162, 162, 0.5);
   line-height: 1.4;
   max-width: 92%;
   direction: rtl;
@@ -41,18 +37,17 @@
 }
 
 .carouselContainer {
-  min-height: 100vh;
+
   background: #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-z-index: 999;
+  padding: 1rem;
+  z-index: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   overflow: hidden;
   position: relative;
- 
 }
 
 .carouselContainer::before {
@@ -71,7 +66,7 @@ z-index: 999;
 .carouselWrapper {
   position: relative;
   width: 100%;
-    margin:2% auto;
+  margin: 1% auto;
   max-width: 600px;
   display: flex;
   align-items: center;
@@ -86,11 +81,11 @@ z-index: 999;
   height: 60px;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -109,8 +104,8 @@ z-index: 999;
 }
 
 .navButton:not(:disabled):hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 1);
   transform: translateY(-50%) scale(1.08);
   box-shadow: 
@@ -124,11 +119,11 @@ z-index: 999;
 }
 
 .navButtonPrev {
-  right: -50px; /* קרוב יותר לתמונה */
+  right: -50px;
 }
 
 .navButtonNext {
-  left: -50px; /* קרוב יותר לתמונה */
+  left: -50px;
 }
 
 .imageContainer {
@@ -139,24 +134,25 @@ z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
-  touch-action: pan-y; /* מאפשר החלקה אופקית בלבד */
+  touch-action: pan-y;
 }
 
 .imageWrapper {
   position: relative;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
-  opacity: 0;
-  transform: translateY(30px) scale(0.92) rotateX(5deg);
+  /* הסרת האפקטים המטשטשים */
+  opacity: 1; /* שינוי מ-0 ל-1 */
+  transform: translateY(0) scale(1) rotateX(0deg); /* הסרת האפקטים המוטסים */
   box-shadow: 
     0 25px 50px rgba(0, 0, 0, 0.5),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  filter: blur(2px);
+  filter: blur(0px); /* הסרת הטשטוש */
 }
 
 .imageWrapper.visible {
@@ -214,7 +210,7 @@ z-index: 999;
 
 .indicators {
   position: absolute;
-  bottom: -30px; /* קרוב יותר - הוזז מ-60px ל-30px */
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -227,7 +223,7 @@ z-index: 999;
   height: 14px;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
@@ -258,14 +254,14 @@ z-index: 999;
 }
 
 .indicator.active {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   box-shadow: 
     0 4px 16px rgba(255, 255, 255, 0.2),
     0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .indicator:not(:disabled):hover {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.5);
   transform: scale(1.15);
   box-shadow: 
     0 6px 20px rgba(255, 255, 255, 0.15),
@@ -301,27 +297,26 @@ z-index: 999;
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
-    margin: 0;
+    margin: 1.5rem 0 0.8rem 0;
     letter-spacing: -1px;
   }
 
   .description {
     font-size: 1.2rem;
-    margin: 0.8rem auto 0.8rem;
+    margin: 0.8rem auto 1.5rem;
     letter-spacing: -0.3px;
   }
 
   .carouselContainer {
     padding: 1rem;
-    gap: 1.5rem;
   }
 
   .navButtonPrev {
-    right: -30px; /* קרוב יותר במובייל */
+    right: -30px;
   }
 
   .navButtonNext {
-    left: -30px; /* קרוב יותר במובייל */
+    left: -30px;
   }
 
   .navButton {
@@ -338,7 +333,7 @@ z-index: 999;
   }
 
   .indicators {
-    bottom: -25px; /* קרוב יותר במובייל - הוזז מ-50px ל-25px */
+    bottom: -25px;
     gap: 12px;
   }
 
@@ -351,20 +346,16 @@ z-index: 999;
 @media (max-width: 480px) {
   .title {
     font-size: 1.6rem;
-    margin: 0;
+    margin: 1rem 0 0.5rem 0;
     letter-spacing: -0.5px;
     padding: 0 0.5rem;
   }
 
   .description {
     font-size: 1rem;
-    margin: 0.5rem auto 0.5rem;
+    margin: 0.5rem auto 1rem;
     letter-spacing: -0.2px;
     padding: 0 0.5rem;
-  }
-
-  .carouselContainer {
-    gap: 1rem;
   }
 
   .navButton {
@@ -375,11 +366,11 @@ z-index: 999;
   }
 
   .navButtonPrev {
-    right: -15px; /* הכי קרוב במובייל קטן */
+    right: -15px;
   }
 
   .navButtonNext {
-    left: -15px; /* הכי קרוב במובייל קטן */
+    left: -15px;
   }
 
   .imageWrapper {
@@ -393,7 +384,7 @@ z-index: 999;
   }
 
   .indicators {
-    bottom: -20px; /* הכי קרוב במובייל קטן */
+    bottom: 0;
     gap: 10px;
   }
 
