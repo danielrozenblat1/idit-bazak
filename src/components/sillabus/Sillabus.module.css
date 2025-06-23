@@ -303,6 +303,49 @@ overflow: hidden;
 }
 
 /* כפתור הרשמה */
+.readyToJoinContainer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.readyToJoinTitle {
+  font-family: "OpenSans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e8e8f0;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff, #e8e8f0, #c0c0d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.1);
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.teamImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+}
+
+
 .registrationButtonContainer {
   grid-column: 1 / -1;
   display: flex;
@@ -715,6 +758,22 @@ overflow: hidden;
     font-size: 0.85rem;
   }
   
+  .readyToJoinContainer {
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .teamImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 1rem;
+  }
+  
   .registrationButtonContainer {
     margin-top: 1.5rem;
   }
@@ -866,6 +925,21 @@ overflow: hidden;
     font-size: 0.9rem;
   }
   
+  .readyToJoinContainer {
+    margin-top: 2.2rem;
+    gap: 1.6rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .teamImage {
+    width: 260px;
+    height: 260px;
+  }
+  
   .registrationButtonContainer {
     margin-top: 1.7rem;
   }
@@ -970,6 +1044,21 @@ overflow: hidden;
     letter-spacing: -0.4px;
   }
   
+  .readyToJoinContainer {
+    margin-top: 2.5rem;
+    gap: 1.7rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 1.7rem;
+    padding: 0 1rem;
+  }
+
+  .teamImage {
+    width: 270px;
+    height: 270px;
+  }
+  
   .registrationButtonContainer {
     margin-top: 2rem;
   }
@@ -1061,6 +1150,21 @@ overflow: hidden;
     letter-spacing: -0.4px;
   }
   
+  .readyToJoinContainer {
+    margin-top: 2.7rem;
+    gap: 1.8rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+
+  .teamImage {
+    width: 280px;
+    height: 280px;
+  }
+  
   .registrationButtonContainer {
     margin-top: 2.2rem;
   }
@@ -1128,6 +1232,20 @@ overflow: hidden;
     letter-spacing: -0.4px;
   }
   
+  .readyToJoinContainer {
+    margin-top: 2.8rem;
+    gap: 1.9rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 1.9rem;
+  }
+
+  .teamImage {
+    width: 290px;
+    height: 290px;
+  }
+  
   .registrationButtonContainer {
     margin-top: 2.5rem;
   }
@@ -1185,6 +1303,20 @@ overflow: hidden;
     letter-spacing: -0.4px;
   }
   
+  .readyToJoinContainer {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 2rem;
+  }
+
+  .teamImage {
+    width: 300px;
+    height: 300px;
+  }
+  
   .registrationButtonContainer {
     margin-top: 2.5rem;
   }
@@ -1230,6 +1362,20 @@ overflow: hidden;
   .sessionTitle {
     font-family: "OpenSans", sans-serif;
     letter-spacing: -0.5px;
+  }
+  
+  .readyToJoinContainer {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  .readyToJoinTitle {
+    font-size: 2rem;
+  }
+
+  .teamImage {
+    width: 300px;
+    height: 300px;
   }
   
   .registrationButtonContainer {
