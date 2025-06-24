@@ -10,7 +10,7 @@ const SecondScreen = () => {
                 <div className={styles.description}>
                     אם את כאן סימן שבדיוק סיימת את ההכשרה שלך או אפילו כבר פתחת את העסק
                     <br/> 
-                    <span className={styles.underlineText}>ורשמית את נחשבת ל״קוסמטיקאית״</span>
+                    <span className={styles.underlineText}>ורשמית את נחשבת ל״מטפלת פנים״</span>
                 </div>
      <div className={styles.title}> אבל התחלת להבין שתעודת המקצוע לבד לא מספיקה בשביל להיות עסק מצליח.. זה:</div>
 {/* <div className={styles.row}>

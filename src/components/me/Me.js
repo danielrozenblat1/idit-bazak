@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './Me.module.css';
-import editPhoto from "../../images/עידית בלי רקע.png";
+import editPhoto from "../../images/עידית.png";
 import ScrollReveal from 'scrollreveal';
 import TestimonialsCarousel from '../carousel/Carousel';
 import Works from '../recommends/Works';

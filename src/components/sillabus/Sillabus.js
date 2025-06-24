@@ -12,6 +12,7 @@ import {
 import styles from './Sillabus.module.css';
 import EligibilitySection from '../whoFits/WhoFits';
 import certificate from "../../images/תעודות.png"
+import Certificates from '../recommends/Certificates';
 const ClinicManagementSyllabus = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   
@@ -183,19 +184,25 @@ const ClinicManagementSyllabus = () => {
                 </div>
               </div>
             ))}
+             
                   <div className={styles.readyToJoinContainer}>
               <h2 className={styles.readyToJoinTitle}>מוכנה להצטרף לנבחרת?</h2>
               
               {/* תמונה 300x300 */}
-              <div className={styles.imageContainer}>
+              {/* <div className={styles.imageContainer}>
                 <img 
                   src={certificate} 
                   alt="נשים מקצועיות עובדות יחד" 
                   className={styles.teamImage}
                 />
-              </div>
-              </div>
+                
+             
+
+              
             {/* כפתור הרשמה אחרי היום האחרון */}
+           
+     </div>
+   
             <div className={styles.registrationButtonContainer}>
               <button 
                 className={styles.registrationButton} 
@@ -212,7 +219,7 @@ const ClinicManagementSyllabus = () => {
           </div>
         )}
 
-
+  
       </div>
       
     </div>
