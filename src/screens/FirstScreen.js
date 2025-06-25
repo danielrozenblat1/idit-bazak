@@ -8,6 +8,7 @@ import middleImage from "../images/עידית בזק תמונה אמצעית.png
 import rightImage from "../images/עידית בזק תמונה ימנית.png"
 import leftImage from "../images/עידית בזק תמונה שמאלית.png"
 import GradientLoader from '../components/loader/Loader';
+import PinkScrollButtonOut from '../components/buttonOut/Button';
 const FirstScreen = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -50,6 +51,7 @@ const FirstScreen = () => {
         <div className={styles.buttonContainer}>
         <PinkScrollButton text="אני רוצה לשמוע על הקורס" icon={learn} to="קורס"/>
         <PinkScrollButton text="אני רוצה לקבוע טיפול" icon={lips} to="טיפולים"/>
+               <PinkScrollButtonOut text="קורס לימוד פילינג הקרבון" icon={learn} />
         </div>
       </div>
     </div>
